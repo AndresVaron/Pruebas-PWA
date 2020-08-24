@@ -2,6 +2,9 @@ const express = require("express"),
   app = express(),
   dist = "dist";
 
+const redirectToHTTPS = require("express-http-to-https").redirectToHTTPS;
+
+app.use(redirectToHTTPS([/localhost:(\d{4})/], [], 301));
 app.use(express.static(dist));
 
 app.get("/", (request, response) => {
