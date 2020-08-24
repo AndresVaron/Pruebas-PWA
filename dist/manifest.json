@@ -1,0 +1,25 @@
+{
+  "name": "Paris Metro 1",
+  "short_name": "ParisMetro",
+  "icons": [
+    {
+      "src": "/images/icons/subway128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/icons/subway256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/icons/subway512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffd100",
+  "theme_color": "#ffd100"
+}
