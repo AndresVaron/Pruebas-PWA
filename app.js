@@ -17,12 +17,4 @@ app.get(
   }
 );
 
-app.get("/manifest.json", (request, response) => {
-  response.json({
-    // Note: Borrowing sender ID from Simple Push Demo.
-    // https://github.com/gauntface/simple-push-demo/blob/master/src/manifest.json
-    gcm_sender_id: "653317226796",
-  });
-});
-
 module.exports = app;

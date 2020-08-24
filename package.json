@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
+    "clean": "rm -rf dist && mkdir dist",
+    "copy": "cp -r src/* dist/",
     "build": "npm run clean && npm run copy && workbox generateSW"
   },
   "dependencies": {
